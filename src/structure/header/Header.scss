@@ -1,0 +1,123 @@
+section#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    height: 100vh;
+    width: 100%;
+
+    .left {
+        background-color: #111;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        position: relative;
+
+        .content {
+            padding: 10%;
+            position: relative;
+            z-index: 1;
+            color: #fff;
+
+            h4 {
+                font-size: 22px;
+                position: relative;
+                left: 110px;
+                flex-basis: inherit;
+                margin: 0 0 10px;
+                font-weight: 500;
+                line-height: 1.1;
+
+                &:after {
+                    content: "";
+                    height: 3px;
+                    width: 90px;
+                    display: block;
+                    background-color: #eb83f8;
+                    position: absolute;
+                    left: -108px;
+                    top: 11px;
+                }
+            }
+
+            h1 {
+                font-size: 64px;
+                line-height: 70px;
+                margin: 0;
+            }
+
+            .Typewriter {
+                margin-top: 8px;
+                font-size: 28px;
+            }
+        }
+
+        .float-image {
+            object-fit: cover;
+            position: absolute;
+            width: 50px;
+            z-index: 0;
+
+            &:nth-child(2) {
+                left: 2%;
+                bottom: 75.2954%;
+            }
+
+            &:nth-child(3) {
+                left: 10%;
+                bottom: 17.4407%;
+            }
+            &:nth-child(4) {
+                left: 20%;
+                bottom: 74.0461%;
+            }
+            &:nth-child(5) {
+                left: 30%;
+                bottom: 19.5403%;
+            }
+            &:nth-child(6) {
+                left: 40%;
+                bottom: 82.2653%;
+            }
+            &:nth-child(7) {
+                left: 50%;
+                bottom: 13.609%;
+            }
+            &:nth-child(8) {
+                left: 60%;
+                bottom: 74.2751%;
+            }
+            &:nth-child(9) {
+                left: 70%;
+                bottom: 16.1749%;
+            }
+            &:nth-child(10) {
+                left: 80%;
+                bottom: 74.9452%;
+            }
+            &:nth-child(11) {
+                left: 88%;
+                bottom: 13.6639%;
+            }
+        }
+    }
+
+    .right {
+        width: 50%;
+        height: 100%;
+        position: relative;
+
+        .figure {
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url('/public/assets/images/profile.jpeg');
+        }
+    }
+}

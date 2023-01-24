@@ -1,0 +1,17 @@
+@media (min-width: 1560px) {
+    .min-height {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 375px) {
+    .wrapper {
+        padding: 32px;
+    }
+}
+
+@media (max-width: 320px) {
+    .wrapper {
+        padding: 20px;
+    }
+}

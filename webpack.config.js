@@ -54,6 +54,10 @@ module.exports = {
         { 
           from: "public/assets", 
           to: "assets" 
+        },
+        {
+          from: "public/404.html",
+          to: "404.html"
         }
       ],
     }),

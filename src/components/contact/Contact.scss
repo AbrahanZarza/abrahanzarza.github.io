@@ -1,0 +1,21 @@
+section#contact {
+    margin: 244px 0 48px;
+    line-height: 1.5;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        line-height: 1.2;
+        font-size: 3rem;
+        color: #fff;
+        margin: 0;
+    }
+    p {
+        margin: 2.5rem 0 0;
+        color: #8F9094;
+        .highlight-text {
+            color: #3CCF91;
+        }
+    }
+}

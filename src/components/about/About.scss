@@ -1,0 +1,47 @@
+section#about {
+    margin: 0 0 48px;
+    h2 {
+        line-height: 1.2;
+        margin: 0;
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: rgba(255,255,255,0.92);
+        font-family: "Ubuntu", sans-serif;
+    }
+    .content {
+        display: flex;
+        flex-direction: row;
+        .text-info {
+            width: 60%;
+            p {
+                margin-top: 1.4rem;
+                font-size: 16px;
+                color: #8F9094;
+                line-height: 1.5;
+            }
+        }
+        .image-info {
+            width: 40%;
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            img.dots {
+                position: absolute;
+                z-index: 3;
+                top: 0px;
+                right: 32px;
+                width: 100px;
+                filter: invert(0.1);
+            }
+            figure {
+                width: 320px;
+                overflow: hidden;
+                border-radius: 100%;
+                display: flex;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

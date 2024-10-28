@@ -1,16 +1,21 @@
 import React from 'react';
-import Header from './structure/header/Header';
-import About from './structure/about/About';
-import Footer from './structure/footer/Footer';
 import './App.scss';
-import './App.responsive.scss';
+import Header from './components/header/Header';
+import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
+import About from './components/about/About';
+import Work from './components/work/Work';
 
 export default () => {
     return (
-        <div>
-            <Header></Header>
-            <About></About>
-            <Footer></Footer>
+        <div className="container">
+            <Header/>
+            <main>
+                <About/>
+                <Work/>
+                <Contact/>
+                <Footer/>
+            </main>
         </div>
     )
 };

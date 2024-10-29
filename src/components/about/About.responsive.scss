@@ -1,0 +1,66 @@
+@media (max-width: 1157px) {
+    section#about {
+        .content {
+            .text-info {
+                width: 50%;
+            }
+            .image-info {
+                width: 50%;
+                figure {
+                    margin: 1rem 0;
+                    height: 320px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 920px) {
+    section#about {
+        .content {
+            .text-info {
+                width: 60%;
+            }
+            .image-info {
+                width: 40%;
+                >img {
+                    display: none;
+                }
+                figure {
+                    margin: 1rem 0;
+                    width: 220px;
+                    height: 220px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 770px) {
+    section#about {
+        .content {
+            .text-info {
+                width: 50%;
+            }
+            .image-info {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media (max-width: 660px) {
+    section#about {
+        .content {
+            flex-direction: column-reverse;
+            .text-info {
+                width: 100%;
+            }
+            .image-info {
+                width: 100%;
+                justify-content: center;
+                margin: 1rem 0;
+            }
+        }
+    }
+}

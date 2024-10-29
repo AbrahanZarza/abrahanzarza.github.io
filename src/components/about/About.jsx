@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.scss';
+import './About.responsive.scss';
 
 export default () => {
     return (

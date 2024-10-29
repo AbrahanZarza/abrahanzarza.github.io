@@ -4,21 +4,21 @@ import WorkCard from '../work-card/WorkCard';
 
 const projects = [
     {
-        img: "assets/images/github-template.png",
+        img: "assets/images/github-banner.png",
         link: "https://github.com/AbrahanZarza/dbm",
         name: "dbm",
-        technologies: ["PHP"],
+        technologies: ["PHP", "PDO"],
         resume: "Herramienta para realizar operaciones con bases de datos."
     },
     {
-        img: "assets/images/github-template.png",
+        img: "assets/images/github-banner.png",
         link: "https://github.com/AbrahanZarza/http-bundle",
         name: "http-bundle",
         technologies: ["PHP", "Docker"],
         resume: "Micro-framework HTTP para desarrollo de aplicaciones web ligeras."
     },
     {
-        img: "assets/images/github-template.png",
+        img: "assets/images/github-banner.png",
         link: "https://github.com/AbrahanZarza/abrahanzarza.github.io",
         name: "abrahanzarza.github.io",
         technologies: ["React", "SCSS", "Javascript"],

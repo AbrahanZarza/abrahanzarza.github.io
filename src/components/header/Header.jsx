@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.scss';
+import './Header.responsive.scss';
 import Social from '../social/Social';
 
 export default () => {
@@ -14,7 +15,7 @@ export default () => {
                 </div>
                 <h1>Abrahan Zarza.</h1>
                 <h2>
-                    <span className="text-highlight">Desarrollador Web</span> Full Stack malagueño entusiasta<br/>
+                    <span className="text-highlight">Desarrollador Web</span> Full Stack malagueño entusiasta <br/>
                     de las nuevas tecnologías.
                 </h2>
                 <ul className="current-main-info">

@@ -1,0 +1,13 @@
+@media (max-width: 445px) {
+    ul.social {
+        flex-direction: column;
+        li {
+            margin-bottom: 1rem;
+            margin-right: 0;
+            a {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+}

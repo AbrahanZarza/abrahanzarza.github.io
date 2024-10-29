@@ -1,5 +1,6 @@
 import React from 'react';
 import './Social.scss';
+import './Social.responsive.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';

@@ -1,0 +1,29 @@
+@media (max-width: 1440px) {
+    .container {
+        max-width: 80vw;
+    }
+}
+
+@media (max-width: 787px) {
+    .full-height {
+        min-height: 620px;
+    }
+}
+
+@media (max-width: 696px) {
+    .full-height {
+        min-height: 500px;
+    }
+}
+
+@media (max-width: 528px) {
+    .full-height {
+        min-height: 440px;
+    }
+}
+
+@media (max-width: 445px) {
+    .full-height {
+        min-height: 530px;
+    }
+}

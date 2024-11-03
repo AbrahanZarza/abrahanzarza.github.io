@@ -1,5 +1,6 @@
 import React from 'react';
 import './Work.scss';
+import './Work.responsive.scss';
 import WorkCard from '../work-card/WorkCard';
 
 const projects = [

@@ -1,0 +1,26 @@
+@media (max-width: 1226px) {
+    section#work {
+        .projects-grid {
+            .info {
+                p {
+                    font-size: 1rem;
+                }
+                a {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1022px) {
+    section#work {
+        margin: 104px 0 48px;
+        .projects-grid {
+            grid-template-columns: repeat(1, minmax(0px, 1fr));
+            .project:nth-child(odd) {
+                margin-top: initial;
+            }
+        }
+    }
+}

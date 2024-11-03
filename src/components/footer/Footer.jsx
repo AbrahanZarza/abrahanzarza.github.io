@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.scss';
+import './Footer.responsive.scss';
 
 export default () => {
     return (

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Contact.scss';
+import './Contact.responsive.scss';
 import Social from '../social/Social';
 
 export default () => {

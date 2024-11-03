@@ -29,7 +29,7 @@ export default () => {
                 <div className="image-info">
                     <img className="dots" src="assets/images/dots.svg"/>
                     <figure>
-                        <img src="assets/images/avatar.png" alt="Abrahan Zarza"/>
+                        <img src="assets/images/avatar.jpg" alt="Abrahan Zarza"/>
                     </figure>
                 </div>
             </div>

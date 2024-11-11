@@ -20,10 +20,10 @@ const projects = [
     },
     {
         img: "assets/images/github-banner.png",
-        link: "https://github.com/AbrahanZarza/abrahanzarza.github.io",
-        name: "abrahanzarza.github.io",
-        technologies: ["React", "SCSS", "Javascript"],
-        resume: "Boilerplate y proyecto web personal."
+        link: "https://github.com/AbrahanZarza/python-boilerplate",
+        name: "python-boilerplate",
+        technologies: ["Python", "Docker"],
+        resume: "Boilerplate para desarrollar aplicaciones con Python de manera ágil."
     },
 ];
 

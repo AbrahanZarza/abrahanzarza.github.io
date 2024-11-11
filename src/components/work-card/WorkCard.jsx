@@ -10,7 +10,8 @@ export default ({project}) => {
             <div className="text">
                 <a href={project.link} target="_blank">{project.name}</a>
                 <ul className="technologies">
-                    {project.technologies.map((technology, key) => <li key={key}>{technology}</li>)}
+                    {project.technologies.map((technology, key) =>
+                        <li key={key} className={`badge-${technology.toLowerCase()}`}>{technology}</li>)}
                 </ul>
                 <hr/>
                 <p>{project.resume}</p>

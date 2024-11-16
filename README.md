@@ -1,51 +1,54 @@
 # Portfolio · Abrahan Zarza
 
-Este es el proyecto con el que he construído mi página web personal o portfolio. Echa un vistazo para conocerme mejor o incluso puedes usarlo para construir tu propio portfolio.
+![React](https://img.shields.io/badge/React-18.2-blue)
+![Webpack](https://img.shields.io/badge/Webpack-5.75-green)
+![Sass](https://img.shields.io/badge/Sass-5.75-orange)
 
-## Cómo empezar
+This is the project I used to build my personal website or portfolio. Take a look to get to know me better, or you can even use it to build your own portfolio.
 
-### Requisitos del sistema
+## How to start
+
+### Prerequisites
 
 * [Docker](https://docs.docker.com/get-docker/)
 * [Docker Compose](https://docs.docker.com/compose/install/)
-* [GNU Make](https://www.gnu.org/software/make/#download)
 
-### Instalación en local
+### Local development
 
-Descargamos el proyecto con `
-git clone https://github.com/AbrahanZarza/abrahanzarza.github.io.git`
-
-Ejecutamos el comando `make initial-setup` para ejecutar la instalación inicial de dependencias del proyecto y configuraciones básicas.
-
-Por último, para arrancar el servidor de desarrollo ejecutamos `make dev`. Esto nos arrancará la web en [http://localhost:3000](http://localhost:3000).
-
-### Comandos útiles
-
-##### Configuración inicial
+Execute the following command to the initial project setup:
 ```
 make initial-setup
 ```
 
-##### Arrancar servicios
-```
-make up
-```
-
-##### Parar servicios
-```
-make down
-```
-
-##### Ejecutar algún comando en el contenedor
-```
-make exec cmd="some comand"
-```
-
-##### Arrancar el servidor de desarrollo
+Next, to start the local development environment run:
 ```
 make dev
 ```
 
-## Producción
+The project will be available in [http://localhost:3000](http://localhost:3000).
 
-Para generar la app de producción ejecutaremos el comando `make build`. Con este comando se generará en la carpeta `/docs` el código que debemos poner en nuestro servidor web.
+### Available commands
+
+##### Stop local development environment
+```
+make down
+```
+
+##### Execute some shell instruction
+```
+make exec cmd="some comand"
+```
+
+##### Run local development environment
+```
+make dev
+```
+
+## Deploy to production
+
+To generate all app assets you must run the following command:
+````
+make build
+```
+
+Next, you will have all the production resources at `/docs` root folder. You can put this files in your favourite server, hosting, etc.

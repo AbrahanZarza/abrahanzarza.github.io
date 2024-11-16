@@ -1,13 +1,12 @@
 {
   "name": "abrahanzarza",
-  "version": "1.0.0",
   "description": "Portfolio website of Abrahan Zarza",
   "scripts": {
     "dev": "webpack-dev-server .",
     "build": "webpack ."
   },
   "author": "Abrahan Zarza",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.20.7",
     "@babel/core": "^7.20.12",

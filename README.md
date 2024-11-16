@@ -47,7 +47,8 @@ make dev
 ## Deploy to production
 
 To generate all app assets you must run the following command:
-````
+
+```
 make build
 ```
 

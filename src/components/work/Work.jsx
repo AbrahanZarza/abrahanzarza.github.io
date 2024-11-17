@@ -15,7 +15,7 @@ const projects = [
         img: "assets/images/github-banner.png",
         link: "https://github.com/AbrahanZarza/http-bundle",
         name: "http-bundle",
-        technologies: ["PHP", "Docker"],
+        technologies: ["PHP"],
         resume: "Micro-framework HTTP para desarrollo de aplicaciones web ligeras."
     },
     {

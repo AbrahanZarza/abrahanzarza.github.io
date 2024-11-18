@@ -56,11 +56,13 @@
             flex-direction: column-reverse;
             .text-info {
                 width: 100%;
+                transition: opacity .3s ease-in-out .6s, transform .3s ease-in-out .6s;
             }
             .image-info {
                 width: 100%;
                 justify-content: center;
                 margin: 1rem 0;
+                transition: opacity .3s ease-in-out .3s, transform .3s ease-in-out .3s;
             }
         }
     }

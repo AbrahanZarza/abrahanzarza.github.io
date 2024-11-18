@@ -1,9 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './WorkCard.scss';
 
 export default ({project}) => {
+    const [isVisible, setIsVisible] = useState(false);
+    const elementRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+          ([entry]) => {
+            if (entry.isIntersecting) {
+              setIsVisible(true);
+            }
+          },
+          { threshold: 0.5 }
+        );
+    
+        if (elementRef.current) {
+          observer.observe(elementRef.current);
+        }
+    
+        return () => {
+          if (elementRef.current) {
+            observer.unobserve(elementRef.current);
+          }
+        };
+      }, []);
+
     return (
-        <div className="project">
+        <div ref={elementRef} className={`project ${isVisible ? 'on-screen' : ''}`}>
             <figure>
                 <img src={project.img}></img>
             </figure>

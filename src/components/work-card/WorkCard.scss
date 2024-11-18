@@ -4,6 +4,13 @@
     &:nth-child(odd) {
         margin-top: -16rem;
     }
+    transform: translateY(4rem);
+    opacity: 0;
+    transition: opacity .3s ease-in-out, transform .3s ease-in-out;
+    &.on-screen {
+        transform: translateY(0);
+        opacity: 1;
+    }
     figure {
         overflow: hidden;
         margin: 0;

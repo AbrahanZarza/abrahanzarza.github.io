@@ -1,13 +1,37 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './About.scss';
 import './About.responsive.scss';
 
 export default () => {
+    const [isVisible, setIsVisible] = useState(false);
+    const elementRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+          ([entry]) => {
+            if (entry.isIntersecting) {
+              setIsVisible(true);
+            }
+          },
+          { threshold: 0.4 }
+        );
+    
+        if (elementRef.current) {
+          observer.observe(elementRef.current);
+        }
+    
+        return () => {
+          if (elementRef.current) {
+            observer.unobserve(elementRef.current);
+          }
+        };
+      }, []);
+
     return (
-        <section id="about">
-            <h2>⚡ Sobre mí</h2>
+        <section id="about" ref={elementRef}>
+            <h2 className={`${isVisible ? 'on-screen' : ''}`}>⚡ Sobre mí</h2>
             <div className="content">
-                <div className="text-info">
+                <div className={`text-info ${isVisible ? 'on-screen' : ''}`}>
                     <p>
                         Suelo trabajar por <span className="highlight-text">Málaga y alrededores</span>.
                         En mi trabajo diario me encargo de desarrollar código de lado del servidor en forma
@@ -26,7 +50,7 @@ export default () => {
                     Siempre estoy experimentando, probando y nunca me canso de aprender.
                     </p>
                 </div>
-                <div className="image-info">
+                <div className={`image-info ${isVisible ? 'on-screen' : ''}`}>
                     <img className="dots" src="assets/images/dots.svg"/>
                     <figure>
                         <img src="assets/images/avatar.jpg" alt="Abrahan Zarza"/>

@@ -7,6 +7,13 @@ section#about {
         font-size: 1.5rem;
         color: rgba(255,255,255,0.92);
         font-family: "Ubuntu", sans-serif;
+        transform: translateY(8rem);
+        opacity: 0;
+        transition: opacity .3s ease-in-out, transform .3s ease-in-out;
+        &.on-screen {
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
     .content {
         display: flex;
@@ -19,12 +26,26 @@ section#about {
                 color: #8F9094;
                 line-height: 1.5;
             }
+            transform: translateY(8rem);
+            opacity: 0;
+            transition: opacity .3s ease-in-out .3s, transform .3s ease-in-out .3s;
+            &.on-screen {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
         .image-info {
             width: 40%;
             position: relative;
             display: flex;
             justify-content: flex-end;
+            transform: translateY(8rem);
+            opacity: 0;
+            transition: opacity .3s ease-in-out .6s, transform .3s ease-in-out .6s;
+            &.on-screen {
+                transform: translateY(0);
+                opacity: 1;
+            }
             img.dots {
                 position: absolute;
                 z-index: 3;

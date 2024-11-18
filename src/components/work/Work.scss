@@ -5,6 +5,13 @@ section#work {
         grid-template-columns: repeat(2, minmax(0px, 1fr));
         gap: 4rem;
         .info {
+            transform: translateY(4rem);
+            opacity: 0;
+            transition: opacity .3s ease-in-out, transform .3s ease-in-out;
+            &.on-screen {
+                transform: translateY(0);
+                opacity: 1;
+            }
             h2 {
                 font-size: 1.5rem;
                 line-height: 1.2;
